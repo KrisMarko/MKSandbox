@@ -50,6 +50,10 @@
 }
 
 - (void)renderWithItem:(MKFileItem *)item {
+//    MKFileItemUp = 0,
+//    MKFileItemDirectory,
+//    MKFileItemFile,
+    
     NSString *text;
     switch (item.type) {
         case MKFileItemUp: {
@@ -66,7 +70,7 @@
             break;
 
         default:
-            text = @"what's this???";
+            text = @"nothing!!!!!!";
             break;
     }
     self.lbName.text = text;
@@ -148,6 +152,7 @@
         targetPath = self.rootPath;
     } else {
         MKFileItem* file = [MKFileItem new];
+//        file.name = @"🔙..";
         file.name = @"..";
         file.type = MKFileItemUp;
         file.path = filePath;
@@ -171,8 +176,10 @@
         file.name = path;
         if (isDir) {
             file.type = MKFileItemDirectory;
+//            file.name = [NSString stringWithFormat:@"%@ %@", @"📁", path];
         } else {
             file.type = MKFileItemFile;
+//            file.name = [NSString stringWithFormat:@"%@ %@", @"📄", path];
         }
         [files addObject:file];
     }

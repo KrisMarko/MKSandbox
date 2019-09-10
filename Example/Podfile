@@ -4,6 +4,7 @@ platform :ios, '8.0'
 
 target 'MKSandbox_Example' do
   pod 'MKSandbox', :path => '../'
+#  pod 'MKSandbox'
 
   target 'MKSandbox_Tests' do
     inherit! :search_paths

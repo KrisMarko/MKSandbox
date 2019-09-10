@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKSandbox'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'ios 沙盒可视化小工具'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'iOS沙盒可视化小工具'
+  s.description      = 'iOS 沙盒可视化小工具，可以通过系统内置分享将文件分享出来。'
 
   s.homepage         = 'https://github.com/KrisMarko/MKSandbox'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
