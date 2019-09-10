@@ -1,0 +1,6 @@
+framework module Pods_MKSandbox_Example {
+  umbrella header "Pods-MKSandbox_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

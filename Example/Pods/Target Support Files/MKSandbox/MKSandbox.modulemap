@@ -1,0 +1,6 @@
+framework module MKSandbox {
+  umbrella header "MKSandbox-umbrella.h"
+
+  export *
+  module * { export * }
+}
